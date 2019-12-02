@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ulangan js</title>
+<style type="text/css">
+	body{
+		text-align: center;
+		background: lightblue;
+	}
+	
+	#p{
+		font-size: 20px;
+		font-weight: bold;
+	}
+	
+</style>
+	
+</head>
+<body>
+	
+	<p id="p">masukan suhu celsius</p>
+	<input id="c" type="number" placeholder="isikan">
+	<br>
+	<button onclick="ubah()">convert</button>
+ 
+		<span id="k"></span>
+		<p>Kelvin</p>
+	</div>
+
+	<div>
+		<span id="F"></span>
+		<p>Fahrenheit</p>
+	</div>
+	<div>
+		<span id="D"></span>
+		<p>Delisle</p>
+	</div>
+	<div>
+		<span id="R"></span>
+		<p>Reamur</p>
+	</div>
+	<div>
+		<span id="Ro"></span>
+		<p>Romer</p>
+	</div>
+	<div>
+		<span id="n"></span>
+		<p>Newton</p>
+	</div>
+	<script >
+		function ubah()
+		{
+			var celcius = document.getElementById('c').value;
+			var hasil1  = parseInt(celcius) + 273.15;
+			document.getElementById("k").innerHTML = hasil1;
+
+			var fa1 = parseInt(celcius) * 1.8;
+			var fa2 = 32;
+			var hasil2 = fa1 + fa2;
+			document.getElementById("F").innerHTML = hasil2;
+
+			var	d1 = 1.8;
+			var d2 = parseInt(celcius) + 491.67;
+			var hasil3 = d1 * d2;
+			document.getElementById("D").innerHTML = hasil3;
+
+			var n1 =parseInt(celcius);
+			var n2 = 0.33;
+			var hasil4 = n1 * n2;
+			document.getElementById("n").innerHTML = hasil4;
+
+			var re1 = parseInt(celcius);
+			var re2 = 0.8;
+			var hasil5 = re1 + re2;
+			document.getElementById("R").innerHTML = hasil5;
+
+			var ro1 = parseInt(celcius) * (21/40)
+			var ro2 = 7.5
+			var hasil6 = ro1 + ro2;
+			document.getElementById("Ro").innerHTML = hasil6;
+		}
+	</script>
+</body>
+</html>

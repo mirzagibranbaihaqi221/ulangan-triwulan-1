@@ -1,0 +1,369 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body{
+	background: #262626;
+
+}
+#atas{
+	background: white;
+	max-width: 100%;
+	
+	margin: auto;
+	display: flex;
+}
+#kiri{
+	width:100%;
+	padding:35px 20px;
+}
+#kiri img{
+	max-width: 200px;
+}
+#kanan {
+	width: 100%;
+	display: flex;
+	flex-flow: column wrap;
+	padding:5px;
+	justify-content: space-around;
+}
+#kanan #cari {
+	align-self: flex-end;
+}
+#kanan #cari input {
+	background: #363636;
+	border: none;
+	border-radius: 15px;
+	color: white;
+	padding: 4px 24px 4px 12px;
+	max-width: 200px;
+	font-size: 12px;
+	font-family: sans-serif;
+
+}
+#input	{
+	position: relative;
+}
+#ikon{
+	position: absolute;
+	top:22px;
+	right: 10px;
+	
+}
+
+#kanan #menu{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+
+}
+#kanan #menu a{
+	font-family: sans-serif; 
+	font-size: 13px;
+	font-weight: normal;
+	text-decoration: none;
+	color: #000;
+	position: relative;
+}
+
+#kanan #menu a:after{
+	content: "";
+	width: 100%;
+	height: 1px;
+	background: #000;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	opacity: 0;
+	transition: all 0.3s;
+}
+
+ #tengah{
+ 	max-width: 100%;
+ 	background: #fff;
+ 	margin: auto;
+ 	border-top:2px solid #262626;
+ 	display: flex;
+ 	flex-flow: row wrap;
+ }
+#contak{
+	position:relative;
+	padding:40px 20px;
+	background: #f5f5f6;
+	color:black;
+	font-size: 25px;
+	font-family: cursive;
+	width: 100%;
+}
+#contak img{
+	position: absolute;
+	bottom: -10px;
+	left: 20px;
+}
+#badan{
+	width: 100%;
+	font-family: sans-serif;
+	font-size: 14px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+#form{
+	width: 100%;
+	min-width: 50%;
+	padding: 40px 20px;
+}
+#form p{
+	color: #55505d;
+}
+#form form table td{
+	font-weight: bold;
+	padding:3px 0 3px 15px;
+	text-align: right;
+}
+#form form table td label{
+	position: relative;
+}
+#p{
+	position: relative;
+}
+#p h3{
+	position: absolute;
+	top:11px;
+	right:0;
+}
+#form form table td: last-child {
+	text-align: left;
+}
+#form form table span{
+color:red;
+}
+#form form input{
+	border:1px solid #ccc;
+	border-radius: 4px;
+	width: 100%;
+	min-width: 50%;
+	padding: 5px;
+}
+.*{
+	position: absolute;
+	transform: translate(-8px,-3px);
+	font-size: 10px;
+	display: none;
+	left:0;
+}
+#form form textarea{
+	width: 100%;
+	min-width: 25%;
+	height: 100px;
+	padding: 7px;
+	border-radius: 4px;
+	border:1px solid #ccc;
+}
+#quest{
+	top:9px;
+
+}
+button{
+	color:white;
+	background: black;
+	border: none;
+	border-radius: 5px;
+	padding: 6px 8px;
+}
+button:hover {
+	cursor: pointer;
+	transform: translateY(2px);
+}
+#samping{
+	width: 100%;
+	min-width: 200px;
+
+
+}
+#isi_samping{
+	padding: 35px 20px
+}
+#isi_samping p{
+	padding-bottom: 30px;
+	line-height: 22px;
+
+}
+#isi_samping a{
+	text-decoration: none;
+	color:#000;
+	line-height: 20px;
+}
+#isi_samping a img{
+	width: 12px;
+}
+#isi_samping #msg{
+	width: 12px;
+	transform: translateY(2px);
+}
+#maps{
+	border:2px solid #ccc;
+	overflow: hidden;
+	width: 50%;
+	padding:2px 5px;
+	margin: 20px 0px;
+	border-radius: 4px;
+}
+#maps div{
+	position: absolute;
+	width: 75%;bottom: 10px;
+	left: 0;right: 0;
+	margin:auto;
+	color: #000;
+	text-align: center;
+}
+#bawah{
+	width: 100%;
+	background: #eee;
+	margin:auto;
+	display: flex;
+	flex-flow: row wrap	;
+	justify-content: space-around;
+}
+#bawah p {
+	color: black;
+	font-size: 12.5px;
+	font-family: sans-serif;
+	line-height: 20px;
+}
+#bawah div {
+	width: 230px;
+}
+#box1, #box2, #box3, #box4 {
+	padding: 50px 0px 20px 0px;
+	/*width: 240px;*/
+}
+#box1 {
+	/*box-sizing: border-box;*/
+}
+#box2 #last {
+	font-family: serif;
+}
+#box2 h1 {
+	padding-bottom: 20px;
+}
+#box2 a {
+	line-height: 35px;
+	text-decoration: none;
+	color: black;
+	font-family: sans-serif;
+	font-size: small;
+	position: relative;
+	transition: all 0.2s;
+}
+#box2 a:after {
+	content: "";
+	width: 220px;
+	height: 1px;
+	background: #c4c4c4;
+	position: absolute;
+	bottom: -10px;
+	left: 0;
+}
+#box2 a:hover {
+	color: #ef454d;
+}
+h1 {
+	padding-bottom: 30px;
+	font-family: sans-serif;
+	font-size: 20px;
+	color: #2c2c2c;
+}
+#box3 {
+	position: relative;
+}
+#box3 a {
+	position: absolute;
+	bottom: 0px;
+	right: 0;
+	text-decoration: none;
+	color: #2c2c2c;
+	font-size: 12px; 
+	transition: all 0.3s;
+}
+#box3 a:hover {
+	color: gray;
+}
+#box4 input {
+	width: 200px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	margin-bottom: 10px;
+	padding: 7px 5px;
+}
+#box4 input::placeholder {
+	color: #000;
+	font-weight: bold;	
+}
+#bawah2 {
+	width: 100%;
+	margin: auto;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	background: #1f232c;
+}
+#bawah2 p {
+	font-size: 13px;
+	margin: 20px;
+	color: #737373;
+} 
+
+#homeatas{
+	width: 100%;
+	color:black;
+	margin:auto;
+	display: flex;
+}
+#homekiri {
+	width: 100%;
+	padding:30px 25px;
+}
+
+#homekiri img {
+	width: 200px;
+}

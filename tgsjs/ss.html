@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		
+	</title>
+	
+</head>
+<body>
+	<!--page-->
+	
+	
+				<p class="big">How many °C?</p>
+				<input id="celcius" type="number" placeholder="Type here...">
+				<br><br>
+				<button onclick="convert()">Convert</button>
+			
+			<br>
+		
+			<span id="k"></span> K
+			<p>Kelvin</p>
+		</div>
+		<div>
+			<span id="f"></span>° F
+			<p>Fahrenheit</p>
+		</div>
+		<div>
+			<span id="ra"></span>° Ra
+			<p>Rankine</p>
+		</div>
+		<div>
+			<span id="de"></span>° De
+			<p>Delisle</p>
+		</div>
+		<div>
+			<span id="n"></span>° N
+			<p>Newton</p>
+		</div>
+		<div>
+			<span id="re"></span>° R
+			<p>Reamur</p>
+		</div>
+		<div>
+			<span id="ro"></span>° Ro
+			<p>Romer</p>
+		</div>
+	</div>
+	<script>
+		function convert()
+		{
+			var celcius = document.getElementById('celcius').value;
+			
+			var result1 = parseInt(celcius) + 273.15;
+			document.getElementById('k').innerHTML = result1;
+
+			var f1 = parseInt(celcius) * 1.8;
+			var f2 = 32;
+			var result2 = f1 + f2;
+			document.getElementById('f').innerHTML = result2;
+
+			var ra1 = 1.8;
+			var ra2 = parseInt(celcius) + 491.67;
+			var result3 = ra1 * ra2;
+			document.getElementById('ra').innerHTML = result3;
+
+			var de1 = 100 - parseInt(celcius);
+			var de2 = 1.5;
+			var result4 = de1 * de2 ;
+			document.getElementById('de').innerHTML = result4;
+
+			var n1 = parseInt(celcius) * 33;
+			var n2 = 100;
+			var result5 = n1 / n2;
+			document.getElementById('n').innerHTML = result5;
+
+			var result6 = parseInt(celcius) * 0.8;
+			document.getElementById('re').innerHTML = result6;
+
+			var ro1 = parseInt(celcius) * 21;
+			var ro2 = 40;
+			var ro3 = 7.5;
+			var result7 =  ro1 / ro2 + ro3;
+			document.getElementById('ro').innerHTML = result7;
+		}
+	</script>
+</body>
+</html>
